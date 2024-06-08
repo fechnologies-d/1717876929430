@@ -1,0 +1,99 @@
+/* Some default styles */
+  /* DO NOT MODIFY. IF YOU DO, RUN `monagree set-color` */
+  :root {
+    --primary-color: #34495e;
+    --pcr: 52; /* Primary Color Red(R) */
+    --pcg: 73; /* Primary Color Green(G) */
+    --pcb: 94; /* Primary Color Blue(B) */
+
+    --secondary-color: #1abc9c;
+    --scr: 26;
+    --scg: 188;
+    --scb: 156;
+    
+    --background-color: #ecf0f1;
+    --bcr: 236;
+    --bcg: 240;
+    --bcb: 241;
+    
+    --text-color: #000000;
+    --tcr: 0;
+    --tcg: 0;
+    --tcb: 0;
+}
+
+body {
+    font-family: 'Pacifico', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+img{
+  object-fit: cover;
+}
+
+h1, h2 {
+    color: var(--primary-color);
+    margin: 5px;
+}
+
+p {
+    color: rgba(var(--tcr), var(--tcg), var(--tcb), 0.8); /* 80% opacity */
+    margin: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Custom Style */
+.ctr{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.devicon{
+    width: 100px;
+}
+
+.btmflt{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.btmflt p{
+    color: rgba(var(--tcr), var(--tcg), var(--tcb), 0.6); /* 60% opacity */
+}
+
+#store-img{
+  background-color: var(--secondary-color);
+  filter: blur(7px);
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.flexi{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#prod{
+  transition: ease-in-out 500ms;
+  cursor: pointer;
+}
+
+#prod:hover{
+  transform: scale(1.1);
+}
